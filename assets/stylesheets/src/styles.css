@@ -8,7 +8,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   margin: 0 auto; }
-  #calculator #keys ::selection, #calculator #keys ::-moz-selection, #calculator #operators ::selection, #calculator #operators ::-moz-selection {
+  #calculator #keys ::selection, #calculator #operators ::selection {
     background-color: transparent;
     color: inherit; }
   #calculator #result {
