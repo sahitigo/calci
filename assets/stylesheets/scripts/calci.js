@@ -15,7 +15,7 @@ var Calci = {
       $('#preview').html('');
       $('#result').html('');
     });
-    ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'].forEach(function(digit) {
+    ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9','/','*','+','-','.'].forEach(function(digit) {
       $(document).bind('keyup', digit, function() {
         Calci.handleInput(digit);
       });
@@ -23,6 +23,14 @@ var Calci = {
     $(document).bind('keyup', 'backspace', function() {
         Calci.handleDelete();
       });
+    $(document).bind('keyup', 'shift+=', function() {
+        Calci.handleInput('+');
+      });
+  ['=','return'].forEach(function(key){
+    $(document).bind('keyup',key, function() {
+        Calci.evaluateResult();
+      });
+  });
   },
   handleInput: function(input) {
     $('#preview').html($('#preview').html() + input);
