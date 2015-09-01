@@ -14,7 +14,8 @@ $(document).ready(function(){
      $('#result').html(eval($('#preview').html()));
    }
    if(typeof(input) != 'undefined' ){
-    $('#preview').html($('#preview').html()+input );
+    $('#preview').html($('#preview').html()+input 
+      );
   }
 });
 });

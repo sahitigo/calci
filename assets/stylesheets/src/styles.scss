@@ -12,7 +12,7 @@ body {
   margin: 0 auto;
 
   #keys, #operators {
-    ::selection {
+    ::selection, ::-moz-selection {
       background-color: transparent;
       color: inherit;
     }
