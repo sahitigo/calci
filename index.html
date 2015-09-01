@@ -4,9 +4,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Calculator</title>
   <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/stylesheets/app.min.css">
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="assets/stylesheets/scripts/jquery.hotkeys.js"></script>
   <script src="assets/stylesheets/scripts/calci.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Roboto:100,300' rel='stylesheet' type='text/css'>
 </head>
@@ -53,13 +54,23 @@
               </div>
             </div>
           </div>
+          <div class="row">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-xs-4 ke input" data-key-type="c" data-digit="">C</div>
+                <div class="col-xs-4 ke input" data-key-type="digit" data-digit="(">(</div>
+                <div class="col-xs-4 ke input" data-key-type="equals" data-digit=")">)</div>
+              </div>
+            </div>
+          </div>
         </div>
         <div id="operators" class="col-xs-3">
-          <div class="operator input" data-key-type="delete">DEL</div>
+          <div id ="delete" class="operator input" data-key-type="delete">DEL</div>
           <div class="operator input" data-key-type="operator" data-operator="/">/</div>
           <div class="operator input" data-key-type="operator" data-operator="*">X</div>
           <div class="operator input" data-key-type="operator" data-operator="-">-</div>
           <div class="operator input" data-key-type="operator" data-operator="+">+</div>
+          <div class="operator input" data-key-type="operator" data-operator="%">%</div>
         </div>
       </div>
     </div>
